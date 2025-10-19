@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom'
 import { cn } from '@/lib/utils'
-import { BarChart, Trophy, Zap, MapPin } from 'lucide-react'
+import { BarChart, Trophy, Zap, MapPin, PiggyBank } from 'lucide-react'
 import { AuroraBackground } from '@/components/ui/dashboard'
 
 interface DashboardLayoutProps {
@@ -16,6 +16,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     { name: 'Streaks', icon: Zap, path: '/streaks' },
     { name: 'Badges', icon: Trophy, path: '/badges' },
     { name: 'Map', icon: MapPin, path: '/map' },
+    { name: 'Bank', icon: PiggyBank, path: '/savings' },
   ]
 
   const handleMenuClick = (path: string) => {

@@ -20,7 +20,7 @@ const SOLAR_SYSTEM = [
     name: "Mercury",
     modelPath: "./models/solar_system/mercury.glb",
     size: 0.38,
-    distance: 1.2,
+    distance: 0.3,
     color: "#8C7853",
     description: "The smallest planet, closest to the Sun",
     scale: 0.5,
@@ -29,7 +29,7 @@ const SOLAR_SYSTEM = [
     name: "Venus",
     modelPath: "./models/solar_system/venus.glb",
     size: 0.95,
-    distance: 1.8,
+    distance: 0.45,
     color: "#FFC649",
     description: "The hottest planet in our solar system",
     scale: 0.6,
@@ -38,7 +38,7 @@ const SOLAR_SYSTEM = [
     name: "Earth",
     modelPath: "./models/solar_system/earth.glb",
     size: 1.0,
-    distance: 2.4,
+    distance: 0.6,
     color: "#6B93D6",
     description: "Our home planet",
     scale: 0.6,
@@ -47,7 +47,7 @@ const SOLAR_SYSTEM = [
     name: "Mars",
     modelPath: "./models/solar_system/mars.glb",
     size: 0.53,
-    distance: 3.0,
+    distance: 0.75,
     color: "#CD5C5C",
     description: "The red planet",
     scale: 0.5,
@@ -56,16 +56,16 @@ const SOLAR_SYSTEM = [
     name: "Jupiter",
     modelPath: "./models/solar_system/jupiter.glb",
     size: 11.2,
-    distance: 4.2,
+    distance: 1.05,
     color: "#D8CA9D",
     description: "The largest planet in our solar system",
-    scale: 0.7,
+    scale: 0.4,
   },
   {
     name: "Saturn",
-    modelPath: "./models/solar_system/asteroid.glb",
+    modelPath: "./models/solar_system/saturn.glb",
     size: 2,
-    distance: 4.2,
+    distance: 1.05,
     color: "#D8CA9D",
     description: "Known for its beautiful rings",
     scale: 0.7,
@@ -74,7 +74,7 @@ const SOLAR_SYSTEM = [
     name: "Uranus",
     modelPath: "./models/solar_system/uranus.glb",
     size: 4.0,
-    distance: 6.6,
+    distance: 1.65,
     color: "#4FD0E7",
     description: "The ice giant",
     scale: 0.5,
@@ -83,7 +83,7 @@ const SOLAR_SYSTEM = [
     name: "Neptune",
     modelPath: "./models/solar_system/neptune.glb",
     size: 3.9,
-    distance: 7.8,
+    distance: 1.95,
     color: "#4B70DD",
     description: "The windiest planet",
     scale: 0.5,
@@ -92,7 +92,7 @@ const SOLAR_SYSTEM = [
     name: "Pluto",
     modelPath: "./models/solar_system/pluto.glb",
     size: 0.18,
-    distance: 9.0,
+    distance: 2.25,
     color: "#C0C0C0",
     description: "A dwarf planet",
     scale: 0.4,
@@ -116,9 +116,9 @@ const Map: React.FC = () => {
         className="text-center pt-24 mb-12 pb-8 relative z-50"
       >
         <h1 className="text-3xl md:text-6xl font-semibold">
-          Solar System Map
+          Solar Literacy Map
         </h1>
-        <p className="text-lg text-white/60 max-w-2xl mx-auto font-light">
+        <p className="text-sm text-gray-400 max-w-2xl mx-auto font-light mt-4">
           Click on each planet to learn more about financial literacy.
         </p>
       </motion.div>
@@ -128,7 +128,7 @@ const Map: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2 }}
-        className="fixed top-1/2 left-0 right-0 z-10 -translate-y-1/2 w-screen pointer-events-none"
+        className="fixed top-[60%] left-0 right-0 z-10 -translate-y-1/2 w-screen pointer-events-none"
       >
         <div
           ref={containerRef}

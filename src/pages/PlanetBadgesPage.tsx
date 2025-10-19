@@ -25,11 +25,11 @@ interface PlanetBadge {
 }
 
 const PLANET_BADGES: PlanetBadge[] = [
-  // Rock Category - Rocky planets
+  // Rock Category - Basic financial concepts
   {
-    id: 'pebble',
-    name: 'Pebble Planet',
-    description: 'Your first step on the journey',
+    id: 'liquidity',
+    name: 'Liquidity',
+    description: 'Your first step into financial literacy',
     requiredStreak: 1,
     category: 'rock',
     rarity: 'common',
@@ -43,9 +43,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'stone',
-    name: 'Stone World',
-    description: 'Building momentum',
+    id: 'inflation',
+    name: 'Inflation',
+    description: 'Understanding economic forces',
     requiredStreak: 3,
     category: 'rock',
     rarity: 'common',
@@ -59,9 +59,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'boulder',
-    name: 'Boulder Sphere',
-    description: 'A week of consistency',
+    id: 'risk-premium',
+    name: 'Risk Premium',
+    description: 'A week of risk management',
     requiredStreak: 7,
     category: 'rock',
     rarity: 'uncommon',
@@ -75,11 +75,11 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
 
-  // Plant Category - Earth-like planets
+  // Plant Category - Growth and investment concepts
   {
-    id: 'seed',
-    name: 'Seed World',
-    description: 'Growth begins',
+    id: 'leverage',
+    name: 'Leverage',
+    description: 'Amplifying your financial power',
     requiredStreak: 14,
     category: 'plant',
     rarity: 'uncommon',
@@ -93,9 +93,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'sprout',
-    name: 'Sprout Sphere',
-    description: 'Breaking through',
+    id: 'hedging',
+    name: 'Hedging',
+    description: 'Protecting your investments',
     requiredStreak: 21,
     category: 'plant',
     rarity: 'uncommon',
@@ -109,9 +109,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'earth',
-    name: 'Earth Twin',
-    description: 'A month of dedication',
+    id: 'diversification',
+    name: 'Diversification',
+    description: 'A month of portfolio mastery',
     requiredStreak: 30,
     category: 'plant',
     rarity: 'rare',
@@ -125,11 +125,11 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
 
-  // Celestial Category - Gas giants
+  // Celestial Category - Advanced financial strategies
   {
-    id: 'jupiter',
-    name: 'Jupiter Giant',
-    description: 'Two months of mastery',
+    id: 'arbitrage',
+    name: 'Arbitrage',
+    description: 'Two months of market mastery',
     requiredStreak: 60,
     category: 'celestial',
     rarity: 'rare',
@@ -143,9 +143,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'saturn',
-    name: 'Saturn Lord',
-    description: 'Three months of brilliance',
+    id: 'disruption',
+    name: 'Disruption',
+    description: 'Three months of innovation',
     requiredStreak: 90,
     category: 'celestial',
     rarity: 'epic',
@@ -159,9 +159,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'neptune',
-    name: 'Neptune King',
-    description: 'Six months of excellence',
+    id: 'volatility',
+    name: 'Volatility',
+    description: 'Six months of market wisdom',
     requiredStreak: 180,
     category: 'celestial',
     rarity: 'epic',
@@ -175,11 +175,11 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
 
-  // Cosmic Category - Stars and exotic worlds
+  // Cosmic Category - Master-level financial concepts
   {
-    id: 'sun',
-    name: 'Solar Star',
-    description: 'One year of legendary dedication',
+    id: 'compound-interest',
+    name: 'Compound Interest',
+    description: 'One year of exponential growth',
     requiredStreak: 365,
     category: 'cosmic',
     rarity: 'legendary',
@@ -193,9 +193,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'nebula',
-    name: 'Nebula Dream',
-    description: 'Two years of cosmic achievement',
+    id: 'derivatives',
+    name: 'Derivatives',
+    description: 'Two years of advanced strategies',
     requiredStreak: 730,
     category: 'cosmic',
     rarity: 'legendary',
@@ -209,9 +209,9 @@ const PLANET_BADGES: PlanetBadge[] = [
     }
   },
   {
-    id: 'galaxy',
-    name: 'Galactic Core',
-    description: 'Five years of universal mastery',
+    id: 'quantum-finance',
+    name: 'Quantum Finance',
+    description: 'Five years of financial mastery',
     requiredStreak: 1825,
     category: 'cosmic',
     rarity: 'legendary',

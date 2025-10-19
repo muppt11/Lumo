@@ -22,6 +22,7 @@ import PlanetBadgesPage from './pages/PlanetBadgesPage.tsx'
 import StreaksPage from './pages/StreaksPage.tsx'
 import DashboardLayout from './components/DashboardLayout.tsx'
 import Map from './pages/Map.tsx'
+import SavingsBank from './pages/SavingsBank.tsx'
 
 
 
@@ -44,6 +45,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="/streaks" element={<DashboardLayout><StreaksPage /></DashboardLayout>} />
         <Route path="/badges" element={<DashboardLayout><PlanetBadgesPage /></DashboardLayout>} />
         <Route path="/map" element={<DashboardLayout><Map /></DashboardLayout>} />
+        <Route path="/savings" element={<DashboardLayout><SavingsBank /></DashboardLayout>} />
         <Route path="/admin" element={<Admin />} />
         </Routes>
       </Router>

@@ -15,6 +15,16 @@ useGLTF.preload('./models/solar_system/uranus.glb');
 useGLTF.preload('./models/solar_system/neptune.glb');
 useGLTF.preload('./models/solar_system/pluto.glb');
 
+// Preload the GLB models from root models folder (used in badges page)
+useGLTF.preload('./models/planet.glb');
+useGLTF.preload('./models/planets2.glb');
+useGLTF.preload('./models/planets3.glb');
+useGLTF.preload('./models/planets4.glb');
+useGLTF.preload('./models/planets5.glb');
+useGLTF.preload('./models/planets6.glb');
+useGLTF.preload('./models/planets7.glb');
+useGLTF.preload('./models/planets8.glb');
+
 interface PlanetCanvasProps {
   modelPath: string;
   scale?: number;

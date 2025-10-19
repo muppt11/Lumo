@@ -32,16 +32,10 @@ const PlanetModel: React.FC<{
   try {
     const { scene } = useGLTF(modelPath, true);
     
-    // Debug: Log the materials in the scene and fix asteroid color
+    // Debug: Log the materials in the scene
     scene.traverse((child) => {
       if (child.isMesh && child.material) {
         console.log('Planet material:', child.material, 'for model:', modelPath);
-        // Fix asteroid red color issue
-        if (modelPath.includes('asteroid')) {
-          // Override the material color to a more natural asteroid color
-          child.material.color.setHex(0x8B7355); // Brownish asteroid color
-          child.material.needsUpdate = true;
-        }
       }
     });
     
@@ -89,7 +83,7 @@ const PlanetModel: React.FC<{
     return (
       <mesh position={position}>
         <sphereGeometry args={[1, 32, 32]} />
-        <meshStandardMaterial color="#ff6b6b" />
+        <meshStandardMaterial color="#666666" />
       </mesh>
     );
   }
