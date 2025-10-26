@@ -1,75 +1,110 @@
-# React + TypeScript + Vite
+# Lumo — Gamified Personal Finance
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Lumo turns banking into a fun game.** Complete quests, build streaks, earn rewards, and form smarter money habits. Illuminate your finances with positive reinforcement and playful UX.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features (current & planned)
 
-## React Compiler
+- **Quests & Streaks:** Habit loops for no-spend days, on-time bills, round-ups, and more  
+- **Rewards & Badges:** Earnable milestones to keep motivation high  
+- **Insights:** Simple, approachable views to track progress and trends  
+- **Privacy-first:** Local development setup with no secrets committed to source  
+- **Future ideas:** Budget templates, friend challenges, gentle nudges
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+> _This repo currently contains the front-end scaffold; backend/API wiring can be added later._
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## 🧱 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React + TypeScript** (Vite dev server & build)
+- **ESLint** with TypeScript rules
+- **React Compiler** enabled by default (see notes below)
+- **(Optional) shadcn/ui** scaffolding via `components.json`—add Tailwind & run the shadcn CLI if you choose to use it
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Quickstart
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Prereqs:
+- **Node.js ≥ 18** (recommended: the latest LTS)
+
+Install & run:
+
+```bash
+# 1) Install deps
+npm install
+
+# 2) Start dev server
+npm run dev
+
+# 3) Build for production
+npm run build
+
+# 4) Preview local production build
+npm run preview 
+
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🧩 Development Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+React Compiler
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This template enables the React Compiler out of the box. It can improve runtime performance by moving work out of render, but it may impact dev/build times. If you hit issues, consult the React docs or temporarily disable it in your setup.
+
+Using shadcn/ui (optional)
+
+If you plan to use shadcn/ui:
+	1.	Add Tailwind CSS and configure tailwind.config.js and postcss.config.js.
+	2.	Install shadcn CLI and generate components into your src directory.
+	3.	Keep components.json in sync as you add components.
+
+⸻
+
+🔧 Common Scripts
+	•	npm run dev — Start the Vite dev server with HMR
+	•	npm run build — Production build
+	•	npm run preview — Preview the production build locally
+	•	npm run lint — Lint the project (if configured)
+
+⸻
+
+📦 Environment Variables
+
+This scaffold doesn’t require any env vars by default.
+When you add APIs (e.g., bank data or auth), create a .env and never commit secrets:
+
+🛡️ Security & Privacy
+	•	Do not commit API keys, tokens, or personal data.
+	•	If you add telemetry, document opt-in/opt-out clearly.
+
+⸻
+
+🗺️ Roadmap
+	•	Onboarding flow with habits & goal selection
+	•	Streak engine + progress widgets
+	•	Rewards/badges system
+	•	Lightweight insights page
+	•	Optional account linking or CSV import (mock or real API)
+
+⸻
+
+🤝 Contributing
+
+PRs welcome! Please:
+	1.	Create a feature branch
+	2.	Keep changes scoped & well-described
+	3.	Add/adjust linting and minimal tests where relevant
+
+⸻
+
+📄 License
+
+Add a license file (e.g., MIT) to clarify usage. Until then, the project is “All rights reserved” by default.
+
+⸻
+
+🙌 Acknowledgements
+
+Bootstrapped from the Vite + React + TypeScript template. Thanks to the Vite & React communities!
