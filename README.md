@@ -108,3 +108,11 @@ Add a license file (e.g., MIT) to clarify usage. Until then, the project is “A
 🙌 Acknowledgements
 
 Bootstrapped from the Vite + React + TypeScript template. Thanks to the Vite & React communities!
+
+## Challenges
+
+**Heavy 3D assets.** The planet and solar system scenes use about 27 MB of `.glb` models with React Three Fiber, so load time and frame rate are the main things to watch as the app grows.
+
+**Making finance feel fun without being childish.** Quests, streaks, and badges have to motivate without hiding real numbers. The plan is for every reward to tie back to a concrete habit, like a no spend day or an on time bill.
+
+**Status.** This is a front end prototype. Backend and bank data wiring are next on the roadmap above.
